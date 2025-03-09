@@ -1,8 +1,8 @@
 #
 apt update -y
-apt install -y libx11-dev libxft-dev libxext-dev libxinerama-dev  zip git gcc make 
-git clone --depth=1 https://github.com/instantOS/instantMENU
-cd instantMENU
+apt install -y libx11-dev libxft-dev  zip git gcc make --no-install-recommends
+git clone --depth=1  https://git.suckless.org/tabbed
+cd tabbed
 make
-make DESTDIR="./dmpkg" install
-zip -r dmpkg.zip dmpkg
+make DESTDIR="./tabpkg" install
+zip -r tabpkg.zip tabpkg

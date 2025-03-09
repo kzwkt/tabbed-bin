@@ -23,7 +23,7 @@ jobs:
     - name:  install dependecies
       run: |
        bash build.sh
-       upload=$(realpath  instantMENU/tabpkg.zip)
+       upload=$(realpath  tabbed/tabpkg.zip)
        echo "FILE1=${upload}" >> $GITHUB_ENV 
 
     - name: Create GitHub Release and Upload ZIP
